@@ -8,8 +8,8 @@ window.helper.jqueryUrl = function() {
 
 	var current, url, version,
 		i = 0,
-		length = parts.length,
-		parts = document.location.search.slice( 1 ).split( "&" );
+		parts = document.location.search.slice( 1 ).split( "&" ),
+		length = parts.length;
 
 	for ( ; i < length; i++ ) {
 		current = parts[ i ].split( "=" );
