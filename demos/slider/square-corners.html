@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" >
+	<title>jQuery UI Slider - Square Corners</title>
+	<link rel="stylesheet" href="../../themes/base/all.css">
+	<script src="../../external/jquery/jquery.js"></script>
+	<script src="../../ui/core.js"></script>
+	<script src="../../ui/widget.js"></script>
+	<script src="../../ui/mouse.js"></script>
+	<script src="../../ui/slider.js"></script>
+	<link rel="stylesheet" href="../demos.css">
+	<script>
+	$(function() {
+		$( "#slider" ).slider({
+			classes: {
+				"ui-slider": "",
+				"ui-slider-handle": "",
+				"ui-slider-range": ""
+			}
+		});
+	});
+	</script>
+</head>
+<body>
+
+<div id="slider"></div>
+
+<div class="demo-description">
+<p>You can use the classes option to remove the corner classes to remove the rounded corners.</p>
+</div>
+</body>
+</html>
