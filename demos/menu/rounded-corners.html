@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery UI Menu - Default functionality</title>
+	<link rel="stylesheet" href="../../themes/base/all.css">
+	<script src="../../external/jquery/jquery.js"></script>
+	<script src="../../ui/core.js"></script>
+	<script src="../../ui/widget.js"></script>
+	<script src="../../ui/position.js"></script>
+	<script src="../../ui/menu.js"></script>
+	<link rel="stylesheet" href="../demos.css">
+	<script>
+	$(function() {
+		$( "#menu" ).menu({
+			classes: {
+				"ui-menu": "ui-corner-all",
+				"ui-menu-item": "ui-corner-all",
+				"ui-menu-item-wrapper": "ui-corner-all"
+			}
+		});
+	});
+	</script>
+	<style>
+	.ui-menu { width: 150px; }
+	</style>
+</head>
+<body>
+
+<ul id="menu">
+	<li class="ui-state-disabled"><div>Aberdeen</div></li>
+	<li><div>Ada</div></li>
+	<li><div>Adamsville</div></li>
+	<li><div>Addyston</div></li>
+	<li><div>Delphi</div>
+		<ul>
+			<li class="ui-state-disabled"><div>Ada</div></li>
+			<li><div>Saarland</div></li>
+			<li><div>Salzburg an der schönen Donau</div></li>
+		</ul>
+	</li>
+	<li><div>Saarland</div></li>
+	<li><div>Salzburg</div>
+		<ul>
+			<li><div>Delphi</div>
+				<ul>
+					<li><div>Ada</div></li>
+					<li><div>Saarland</div></li>
+					<li><div>Salzburg</div></li>
+				</ul>
+			</li>
+			<li><div>Delphi</div>
+				<ul>
+					<li><div>Ada</div></li>
+					<li><div>Saarland</div></li>
+					<li><div>Salzburg</div></li>
+				</ul>
+			</li>
+			<li><div>Perch</div></li>
+		</ul>
+	</li>
+	<li class="ui-state-disabled"><div>Amesville</div></li>
+</ul>
+
+<div class="demo-description">
+<p>You can use the classes option to add the corner classes to add rounded corners.</p>
+</div>
+</body>
+</html>
